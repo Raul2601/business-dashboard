@@ -1,0 +1,84 @@
+.menu-sidebar {
+    width: 16rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44,51,73,.1);
+    color: #222b45;
+    font-family: Open Sans,sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  
+  .main-container {
+    top: 4.75rem;
+    position: fixed;
+    width: 16rem;
+  }
+  
+  .scrollable {
+    padding-top: 2.25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    position: relative;
+  }
+  
+  .menu-items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  .menu-item {
+    border-top: none;
+    border-bottom: 1px solid #edf1f7;
+    color: #222b45;
+    font-family: Open Sans,sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  
+  .menu-item a.active {
+    background-color: transparent;
+    color: #36f;
+  }
+  
+  .menu-icon {
+    color: #8f9bb3;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  
+  .menu-title {
+    flex: 1 0 auto;
+    font-family: Open Sans,sans-serif;
+    font-size: .8125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .extend-state {
+    color: #8f9bb3;
+    font-size: 0.8rem;
+    width: 1em;
+  }
+  
+  .menu-link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: .75rem 1rem;
+  }
+  
+  .menu-item a {
+    font-family: Open Sans,sans-serif;
+    font-size: .8125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1rem;
+  }
+  
+  
