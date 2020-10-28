@@ -14,7 +14,7 @@ export class PagesMenuService {
     const menu: MenuItem[] = [
       {
         title: 'Layout',
-        icon: 'layout-outline',
+        icon: 'fa fa-shoping-cart',
         children: [
           {
             title: 'Stepper',

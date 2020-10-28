@@ -1,6 +1,8 @@
-export interface MenuItem {
-    title: string,
-    icon?: string,
+
+export declare class MenuItem {
+    title: string;
     link?: string;
-    children?: MenuItem[]
+    icon?: string;
+    children?: MenuItem[];
 }
+

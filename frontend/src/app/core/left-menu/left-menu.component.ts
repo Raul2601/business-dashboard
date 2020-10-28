@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, } from '@angular/core';
 import { MenuItem } from '../../pages/menu-item'
 import { PagesMenuService } from '../../pages/pages-menu.service'
 
@@ -10,12 +10,9 @@ import { PagesMenuService } from '../../pages/pages-menu.service'
 export class LeftMenuComponent {
 
   menu: MenuItem[];
-  alive: boolean = true;
-  public isCollapsed = true;
 
   constructor(private pagesMenuService: PagesMenuService) {
     this.initMenu();
-
   }
 
   initMenu() {

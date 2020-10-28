@@ -1,0 +1,13 @@
+<a *ngIf="menuItem.children" class="menu-link" (click)="isCollapsed=!isCollapsed">
+    <i class="{{menuItem.icon}} menu-icon"></i>
+    <span class="menu-title">{{menuItem.title}}</span>
+    <i class="fa fa-chevron-left extend-state"></i>
+</a>
+
+<ul *ngIf="menuItem.children" class="menu-items" [hidden]="!isCollapsed">
+    <li *ngFor="let item of menuItem.children" class="menu-item">
+        <a class="menu-link" href="{{item.link}}" [routerLink]="item.link">
+            <span class="menu-title">{{item.title}}</span>
+        </a>
+    </li>
+</ul>
