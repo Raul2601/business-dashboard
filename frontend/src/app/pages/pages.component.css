@@ -4,6 +4,9 @@
 }
 
 .content{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: rgb(237, 241, 247
+    );
 }

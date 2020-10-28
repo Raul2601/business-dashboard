@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PagesComponent } from './pages.component';
+import { LayoutComponent } from './layout.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: PagesComponent,
+    component: LayoutComponent,
     children: [
       {
-        path: 'layout',
-        loadChildren: () => import('./layout/layout.module')
-          .then(m => m.LayoutModule)
+        path: 'stepper',
+        component: StepperComponent
       }
     ]
+
   }
 ];
 
@@ -20,4 +21,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PagesRoutingModule { }
+export class LayoutRoutingModule { }

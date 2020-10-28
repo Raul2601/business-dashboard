@@ -6,7 +6,7 @@
 
 <ul *ngIf="menuItem.children" class="menu-items" [hidden]="!isCollapsed">
     <li *ngFor="let item of menuItem.children" class="menu-item">
-        <a class="menu-link" href="{{item.link}}" [routerLink]="item.link">
+        <a [routerLink]="[item.link]" routerLinkActive="active" class="menu-link">
             <span class="menu-title">{{item.title}}</span>
         </a>
     </li>
