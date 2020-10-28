@@ -1,7 +1,6 @@
 .menu-sidebar {
     width: 16rem;
-    background-color: #fff;
-    box-shadow: 0 0.5rem 1rem 0 rgba(44,51,73,.1);
+    
     color: #222b45;
     font-family: Open Sans,sans-serif;
     font-size: .9375rem;
@@ -13,8 +12,45 @@
     top: 4.75rem;
     position: fixed;
     width: 16rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44,51,73,.1);
+    height: calc(100vh - 4.75rem);
+    overflow: auto;
+    cursor: pointer;
+    border-radius: .15625rem;
   }
   
+  .div.scroll { 
+    margin:4px, 4px; 
+    padding:4px; 
+    background-color: green; 
+    width: 500px; 
+    height: 110px; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    text-align:justify; 
+
+} 
+
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(250, 214, 214, 0.3);
+	background: #e4e9f2;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 5px;
+	background: #e4e9f2;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background: #e4e9f2;
+	border: 1px solid #e0dddd;
+}
+
+
   .scrollable {
     padding-top: 2.25rem;
     overflow-y: auto;
