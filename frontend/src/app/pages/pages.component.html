@@ -1,8 +1,10 @@
 <app-header></app-header>
 <div class="layout-container">
     <app-left-menu></app-left-menu>
-    <div class="content">
-        <router-outlet></router-outlet>
-        <app-footer></app-footer>
+    <div class="scrollbar content" id="style-4">
+        <div class="force-overflow">
+            <router-outlet></router-outlet>
+            <app-footer></app-footer>
+        </div>
     </div>
 </div>
