@@ -8,8 +8,11 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(237, 241, 247);
+    height: 100%;
+}
+
+.columns{
     padding: 2.25rem 2.25rem .75rem;
-    height: 47rem;
 }
 
 #style-4::-webkit-scrollbar-track
@@ -39,5 +42,5 @@
 
 .force-overflow
 {
-	min-height: 450px;
+	/* min-height: 450px; */
 }

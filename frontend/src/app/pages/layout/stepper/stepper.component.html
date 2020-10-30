@@ -71,69 +71,65 @@
 
     </div>
 
-    <div class="col-md-12 col-lg-6 col-xxxl-6 thirdStepper">
-        <div class="scrollbar" id="style-4">
-            <div class="force-overflow">
-                <mat-vertical-stepper [linear]="true" #thirdStepper>
-                    <mat-step>
-                        <ng-template matStepLabel>First step</ng-template>
-                        <div class="text-center">
-                            <h3>Step content #1</h3>
-                            <p>Proin varius accumsan semper. Praesent consequat tincidunt sagittis.
-                                Curabitur egestas sem a ipsum bibendum, sit amet fringilla orci efficitur. Nam bibendum
-                                lectus
-                                ut viverra tristique. Fusce eu pulvinar magna, quis viverra ex. Lorem ipsum dolor sit
-                                amet,
-                                consectetur adipiscing elit. Praesent metus turpis, commodo vel placerat quis, lobortis
-                                in
-                                ligula.</p>
-                            <button mat-button matStepperNext>Next</button>
-                        </div>
-                    </mat-step>
-                    <mat-step>
-                        <ng-template matStepLabel>Second step</ng-template>
-                        <div class="text-center">
-                            <h3>Step content #2</h3>
-                            <p>Curabitur luctus mattis risus nec condimentum. Donec at dui turpis. Sed vehicula
-                                fringilla
-                                rutrum. Nullam sed ornare magna. Mauris vitae laoreet diam. Mauris fermentum ligula at
-                                lacinia semper. Nulla placerat dui eu sapien pellentesque, eu placerat leo luctus. Cras
-                                pharetra blandit fermentum.</p>
-                            <button mat-button matStepperPrevious>Back</button>
-                            <button mat-button matStepperNext>Next</button>
-                        </div>
-                    </mat-step>
-                    <mat-step>
-                        <ng-template matStepLabel>Third step</ng-template>
-                        <div class="text-center">
-                            <h3>Step content #3</h3>
-                            <p>Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas
-                                sem a
-                                ipsum bibendum, sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra
-                                tristique.
-                                Fusce eu pulvinar magna, quis viverra ex. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit. Praesent metus turpis, commodo vel placerat quis, lobortis in ligula.
-                            </p>
-                            <button mat-button matStepperPrevious>Back</button>
-                            <button mat-button matStepperNext>Next</button>
-                        </div>
-                    </mat-step>
-                    <mat-step>
-                        <ng-template matStepLabel>Fourth step</ng-template>
-                        <div class="text-center">
-                            <h3>Step content #4</h3>
-                            <p>Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas
-                                sem a
-                                ipsum bibendum, sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra
-                                tristique.
-                                Fusce eu pulvinar magna, quis viverra ex.</p>
-                            <button mat-button matStepperPrevious>Back</button>
-                            <button mat-button (click)="thirdStepper.reset()">Reset</button>
-                        </div>
-                    </mat-step>
-                </mat-vertical-stepper>
-            </div>
-        </div>
+    <div class="col-md-12 col-lg-6 col-xxxl-6">
+        <mat-vertical-stepper [linear]="true" #thirdStepper>
+            <mat-step>
+                <ng-template matStepLabel>First step</ng-template>
+                <div class="text-center">
+                    <h3>Step content #1</h3>
+                    <p>Proin varius accumsan semper. Praesent consequat tincidunt sagittis.
+                        Curabitur egestas sem a ipsum bibendum, sit amet fringilla orci efficitur. Nam bibendum
+                        lectus
+                        ut viverra tristique. Fusce eu pulvinar magna, quis viverra ex. Lorem ipsum dolor sit
+                        amet,
+                        consectetur adipiscing elit. Praesent metus turpis, commodo vel placerat quis, lobortis
+                        in
+                        ligula.</p>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Second step</ng-template>
+                <div class="text-center">
+                    <h3>Step content #2</h3>
+                    <p>Curabitur luctus mattis risus nec condimentum. Donec at dui turpis. Sed vehicula
+                        fringilla
+                        rutrum. Nullam sed ornare magna. Mauris vitae laoreet diam. Mauris fermentum ligula at
+                        lacinia semper. Nulla placerat dui eu sapien pellentesque, eu placerat leo luctus. Cras
+                        pharetra blandit fermentum.</p>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Third step</ng-template>
+                <div class="text-center">
+                    <h3>Step content #3</h3>
+                    <p>Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas
+                        sem a
+                        ipsum bibendum, sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra
+                        tristique.
+                        Fusce eu pulvinar magna, quis viverra ex. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit.
+                    </p>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Fourth step</ng-template>
+                <div class="text-center">
+                    <h3>Step content #4</h3>
+                    <p>Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas
+                        sem a
+                        ipsum bibendum, sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra
+                        tristique.
+                        Fusce eu pulvinar magna, quis viverra ex.</p>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button (click)="thirdStepper.reset()">Reset</button>
+                </div>
+            </mat-step>
+        </mat-vertical-stepper>
     </div>
 </div>
