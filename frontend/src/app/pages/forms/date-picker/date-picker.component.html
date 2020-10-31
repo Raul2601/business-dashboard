@@ -20,12 +20,72 @@
             </app-card-header>
             <mat-form-field appearance="fill">
                 <mat-label>Enter a date range</mat-label>
-                <mat-date-range-input [rangePicker]="picker">
+                <mat-date-range-input [rangePicker]="picker2">
                     <input matStartDate placeholder="Start date">
                     <input matEndDate placeholder="End date">
                 </mat-date-range-input>
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-date-range-picker #picker></mat-date-range-picker>
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker2></mat-date-range-picker>
+            </mat-form-field>
+        </mat-card>
+    </div>
+    <div class="col-md-4">
+        <mat-card>
+            <app-card-header>
+                Datepicker with filter validation
+            </app-card-header>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker3">
+                <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                <mat-datepicker #picker3></mat-datepicker>
+            </mat-form-field>
+        </mat-card>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Comparison ranges
+            </app-card-header>
+            <mat-form-field class="example-form-field" appearance="fill">
+                <mat-label>First campaign</mat-label>
+                <mat-date-range-input [formGroup]="campaignOne" [rangePicker]="campaignOnePicker"
+                    [comparisonStart]="campaignTwo.value.start" [comparisonEnd]="campaignTwo.value.end">
+                    <input matStartDate placeholder="Start date" formControlName="start">
+                    <input matEndDate placeholder="End date" formControlName="end">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+                <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+            </mat-form-field>
+
+            <mat-form-field class="example-form-field" appearance="fill">
+                <mat-label>Second campaign</mat-label>
+                <mat-date-range-input [formGroup]="campaignTwo" [rangePicker]="campaignTwoPicker"
+                    [comparisonStart]="campaignOne.value.start" [comparisonEnd]="campaignOne.value.end">
+                    <input matStartDate placeholder="Start date" formControlName="start">
+                    <input matEndDate placeholder="End date" formControlName="end">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matSuffix [for]="campaignTwoPicker"></mat-datepicker-toggle>
+                <mat-date-range-picker #campaignTwoPicker></mat-date-range-picker>
+            </mat-form-field>
+        </mat-card>
+    </div>
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Customizing the date selection logic
+            </app-card-header>
+            <mat-form-field appearance="fill">
+                <mat-label>Enter a date range</mat-label>
+                <mat-date-range-input [rangePicker]="picker5">
+                    <input matStartDate placeholder="Start date">
+                    <input matEndDate placeholder="End date">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matSuffix [for]="picker5"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker5></mat-date-range-picker>
             </mat-form-field>
         </mat-card>
     </div>
