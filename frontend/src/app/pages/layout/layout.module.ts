@@ -8,16 +8,22 @@ import { LayoutComponent } from './layout.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { MaterialModule } from '../../shared/material.module'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ListComponent } from './list/list.component';
+import { CoreModule } from 'src/app/core/core.module';
+import { AccordionComponent } from './accordion/accordion.component';
+import { TabsComponent } from './tabs/tabs.component';
+
 
 @NgModule({
-  declarations: [LayoutComponent, StepperComponent],
+  declarations: [LayoutComponent, StepperComponent, ListComponent, AccordionComponent, TabsComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     MatSliderModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CoreModule
   ]
 })
 export class LayoutModule { }
