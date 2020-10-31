@@ -7,9 +7,10 @@ import { FormInputsComponent } from './form-inputs/form-inputs.component';
 
 import { MaterialModule } from '../../shared/material.module'
 import { CoreModule } from 'src/app/core/core.module';
+import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
 
 @NgModule({
-  declarations: [FormsComponent, FormInputsComponent],
+  declarations: [FormsComponent, FormInputsComponent, FormLayoutsComponent],
   imports: [
     CommonModule,
     FormsRoutingModule,
