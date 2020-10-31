@@ -9,14 +9,17 @@ import { MaterialModule } from '../../shared/material.module'
 import { CoreModule } from 'src/app/core/core.module';
 import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [FormsComponent, FormInputsComponent, FormLayoutsComponent, ButtonsComponent],
+  declarations: [FormsComponent, FormInputsComponent, FormLayoutsComponent, ButtonsComponent, DatePickerComponent],
   imports: [
     CommonModule,
     FormsRoutingModule,
     MaterialModule,
-    CoreModule
+    CoreModule,
+    ReactiveFormsModule
   ]
 })
 export class FormsModule { }
