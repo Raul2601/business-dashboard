@@ -1,6 +1,6 @@
-## Angular10 NodeJs Docker DeployingCloudRun template
+## Business Dashboard
 
-This is a simple template application.
+Angular 10, Boostrap, Angular Material, NodeJs, Express, Passport, Mongoose, MongoDB, Docker
 
 ## What's included
  - Frontend: simple Angular10 application
