@@ -11,6 +11,11 @@ const routes: Routes = [
         path: 'layout',
         loadChildren: () => import('./layout/layout.module')
           .then(m => m.LayoutModule)
+      },
+      {
+        path: 'forms',
+        loadChildren: () => import('./forms/forms.module')
+          .then(m => m.FormsModule)
       }
     ]
   }

@@ -1,0 +1,160 @@
+<div class="row">
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>Default Inputs</app-card-header>
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Project</mat-label>
+                    <input matInput placeholder="Ex. Dashboard">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nick</mat-label>
+                    <input matInput placeholder="Ex. Alex">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Ex. Jhon">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width h-25">
+                    <mat-label>Password</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Text Area</mat-label>
+                    <textarea matInput rows="10" cols="40" placeholder="Ex. It makes me feel..."></textarea>
+                </mat-form-field>
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                </div>
+
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg">
+                </div>
+            </form>
+        </mat-card>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card>
+                    <app-card-header>Select</app-card-header>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Favorite food</mat-label>
+                        <mat-select>
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </mat-card>
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <mat-card>
+                    <app-card-header>Validation States</app-card-header>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail" class="col-sm-2 col-form-label text-success">Email</label>
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control is-valid" id="inputEmail" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Password</label>
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control is-invalid" id="inputPassword"
+                                    placeholder="Password">
+                            </div>
+                            <div class="col-sm-3">
+                                <small id="passwordHelp" class="text-danger">
+                                    Must be 8-20 characters long.
+                                </small>
+                            </div>
+                        </div>
+                    </form>
+                </mat-card>
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <mat-card>
+                    <app-card-header>Checkboxes & Radios</app-card-header>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" checked id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Checkbox 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Checkbox 2
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    First radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Second radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Third radio
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Disabled checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                    value="option3" disabled>
+                                <label class="form-check-label" for="exampleRadios3">
+                                    Disabled radio
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
