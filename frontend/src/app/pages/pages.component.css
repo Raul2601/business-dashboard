@@ -12,7 +12,9 @@
 }
 
 .columns{
+    margin: 0px;
     padding: 2.25rem 2.25rem .75rem;
+    max-width: 100%;
 }
 
 #style-4::-webkit-scrollbar-track
