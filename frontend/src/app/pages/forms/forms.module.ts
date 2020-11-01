@@ -10,7 +10,7 @@ import { CoreModule } from 'src/app/core/core.module';
 import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule as FormModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [FormsComponent, FormInputsComponent, FormLayoutsComponent, ButtonsComponent, DatePickerComponent],
@@ -19,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsRoutingModule,
     MaterialModule,
     CoreModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormModule
   ]
 })
 export class FormsModule { }
