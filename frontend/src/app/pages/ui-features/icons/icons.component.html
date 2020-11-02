@@ -2,9 +2,9 @@
     <div class="col-md-12">
         <mat-card>
             <app-card-header>
-                Basic Icons
+                Icons
             </app-card-header>
-            <i class="fa fa-camera-retro"></i> fa-camera-retro
+            <a href="https://fontawesome.com/icons?from=io">See all icons</a>
         </mat-card>
     </div>
 </div>
@@ -14,11 +14,13 @@
             <app-card-header>
                 Larger Icons
             </app-card-header>
-            <i class="fa fa-camera-retro fa-lg"></i> fa-lg
-            <i class="fa fa-camera-retro fa-2x"></i> fa-2x
-            <i class="fa fa-camera-retro fa-3x"></i> fa-3x
-            <i class="fa fa-camera-retro fa-4x"></i> fa-4x
-            <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+            <div class="d-flex flex-column">
+                <div><i class="fa fa-camera-retro fa-lg"></i> fa-lg</div>
+                <div><i class="fa fa-camera-retro fa-2x"></i> fa-2x</div>
+                <div><i class="fa fa-camera-retro fa-3x"></i> fa-3x</div>
+                <div><i class="fa fa-camera-retro fa-4x"></i> fa-4x</div>
+                <div><i class="fa fa-camera-retro fa-5x"></i> fa-5x</div>
+            </div>
         </mat-card>
     </div>
     <div class="col-md-4">
@@ -106,12 +108,16 @@
                 </a>
             </div>
 
-            <div class="input-group margin-bottom-sm mt-2">
-                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-                <input class="form-control" type="text" placeholder="Email address">
+            <div class="input-group margin-bottom-sm mt-4">
+                <span class="input-group-text">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="example@mail.com" formControlName="email" />
             </div>
             <div class="input-group mt-2">
-                <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                <span class="input-group-text">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </span>
                 <input class="form-control" type="password" placeholder="Password">
             </div>
         </mat-card>
@@ -125,30 +131,38 @@
                 <i class="fa fa-cog" aria-hidden="true"></i>
             </a>
 
-            <a class="btn btn-danger" href="path/to/settings" aria-label="Delete">
+            <a class="btn btn-danger ml-2" href="path/to/settings" aria-label="Delete">
                 <i class="fa fa-trash-o" aria-hidden="true"></i>
             </a>
 
-            <a class="btn btn-primary" href="#navigation-main" aria-label="Skip to main navigation">
+            <a class="btn btn-primary ml-2" href="#navigation-main" aria-label="Skip to main navigation">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </a>
-            <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+
+            <i class="fa fa-refresh fa-spin fa-2x fa-fw ml-2" aria-hidden="true"></i>
             <span class="sr-only">Refreshing...</span>
 
-            <i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+            <i class="fa fa-cog fa-spin fa-2x fa-fw ml-2" aria-hidden="true"></i>
             <span class="sr-only">Saving. Hang tight!</span>
-            <div class="input-group margin-bottom-sm">
-                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
-                <input class="form-control" type="text" placeholder="Email address">
+
+            <div class="input-group margin-bottom-sm mt-4">
+                <span class="input-group-text">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="example@mail.com" formControlName="email" />
             </div>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+            <div class="input-group mt-2">
+                <span class="input-group-text">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </span>
                 <input class="form-control" type="password" placeholder="Password">
             </div>
-            <a href="path/to/shopping/cart" class="btn btn-primary" aria-label="View 3 items in your shopping cart">
+
+            <a href="path/to/shopping/cart" class="btn btn-primary mt-2"
+                aria-label="View 3 items in your shopping cart">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </a>
-            <i class="fa fa-battery-half" aria-hidden="true"></i>
+            <i class="fa fa-battery-half ml-2" aria-hidden="true"></i>
             <span class="sr-only">Battery level: 50%</span>
         </mat-card>
     </div>
