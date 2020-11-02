@@ -29,8 +29,10 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const materialModules = [
+  MatDialogModule,
   MatNativeDateModule,
   MatDatepickerModule,
   MatStepperModule,
