@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { GridComponent } from './grid/grid.component';
 import { UiFeaturesComponent } from './ui-features.component'
 import { IconsComponent } from './icons/icons.component'
+import { TypographyComponent } from './typography/typography.component';
 
 const routes: Routes = [
   {
@@ -16,10 +17,10 @@ const routes: Routes = [
       path: 'icons',
       component: IconsComponent,
     },
-      // {
-      //   path: 'typography',
-      //   component: TypographyComponent,
-      // },
+    {
+      path: 'typography',
+      component: TypographyComponent,
+    },
       // {
       //   path: 'search-fields',
       //   component: SearchComponent,
