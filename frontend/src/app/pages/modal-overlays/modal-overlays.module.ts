@@ -6,16 +6,15 @@ import { DialogComponent } from './dialog/dialog.component';
 import { ModalOverlaysComponent } from './modal-overlays.component';
 import { CoreModule } from 'src/app/core/core.module';
 import { MaterialModule } from '../../shared/material.module';
-import { ModalModule } from 'ngx-bootstrap/modal';
+import { PopoversComponent } from './popovers/popovers.component';
 
 @NgModule({
-  declarations: [DialogComponent, ModalOverlaysComponent],
+  declarations: [DialogComponent, ModalOverlaysComponent, PopoversComponent],
   imports: [
     CommonModule,
     ModalOverlaysRoutingModule,
     CoreModule,
     MaterialModule,
-    ModalModule
   ]
 })
 export class ModalOverlaysModule { }
