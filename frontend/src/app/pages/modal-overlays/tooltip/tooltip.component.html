@@ -1,0 +1,80 @@
+<div class="row">
+    <div class="col-md-4">
+        <mat-card>
+            <app-card-header>
+                Tooltip Placements
+            </app-card-header>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" placement="top"
+                ngbTooltip="Tooltip on top">
+                Tooltip on top
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" placement="right"
+                ngbTooltip="Tooltip on right">
+                Tooltip on right
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" placement="bottom"
+                ngbTooltip="Tooltip on bottom">
+                Tooltip on bottom
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" placement="left"
+                ngbTooltip="Tooltip on left">
+                Tooltip on left
+            </button>
+        </mat-card>
+    </div>
+
+    <div class="col-md-4">
+        <mat-card>
+            <app-card-header>
+                Tooltip With Icon
+            </app-card-header>
+            <div class="d-flex">
+                <div class="mt-2">
+                    <ng-template #tipContent> <i class="fa fa-exclamation-triangle" style="color:red"
+                            aria-hidden="true"></i>
+                    </ng-template>
+                    <button type="button" class="btn btn-outline-secondary" [ngbTooltip]="tipContent">
+                        Show Tooltip
+                    </button>
+                </div>
+                <div class="ml-2 mt-2">
+                    <ng-template #tipContent1>
+                        <p> This is a Tooltip</p>
+                        <i class="fa fa-exclamation-triangle" style="color:red" aria-hidden="true"></i>
+                    </ng-template>
+                    <button type="button" class="btn btn-outline-secondary" [ngbTooltip]="tipContent1">
+                        Show Tooltip
+                    </button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+    <div class="col-md-4">
+        <mat-card>
+            <app-card-header>
+                Colored Tooltips
+            </app-card-header>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" ngbTooltip="Nice class!"
+                tooltipClass="primary">
+                This is a Tooltip
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" ngbTooltip="Nice class!"
+                tooltipClass="success">
+                This is a Tooltip
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" ngbTooltip="Nice class!"
+                tooltipClass="danger">
+                This is a Tooltip
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" ngbTooltip="Nice class!"
+                tooltipClass="warning">
+                This is a Tooltip
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2 mt-2" ngbTooltip="Nice class!"
+                tooltipClass="info">
+                This is a Tooltip
+            </button>
+        </mat-card>
+    </div>
+</div>

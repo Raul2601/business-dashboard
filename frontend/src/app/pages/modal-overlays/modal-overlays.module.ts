@@ -9,9 +9,10 @@ import { MaterialModule } from '../../shared/material.module';
 import { PopoversComponent } from './popovers/popovers.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
-  declarations: [DialogComponent, ModalOverlaysComponent, PopoversComponent],
+  declarations: [DialogComponent, ModalOverlaysComponent, PopoversComponent, TooltipComponent],
   imports: [
     CommonModule,
     ModalOverlaysRoutingModule,

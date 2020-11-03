@@ -1,0 +1,39 @@
+.primary .tooltip-inner {
+    background-color: #007bff;
+    font-size: 125%;
+  }
+  .primary .arrow::before {
+    border-top-color: #007bff;
+  }
+
+  .success .tooltip-inner {
+    background-color: #28a745;
+    font-size: 125%;
+  }
+  .success .arrow::before {
+    border-top-color: #28a745;
+  }
+
+  .danger .tooltip-inner {
+    background-color: #dc3545;
+    font-size: 125%;
+  }
+  .danger .arrow::before {
+    border-top-color: #dc3545;
+  }
+
+  .warning .tooltip-inner {
+    background-color: #ffc107;
+    font-size: 125%;
+  }
+  .warning .arrow::before {
+    border-top-color: #ffc107;
+  }
+
+  .info .tooltip-inner {
+    background-color: #17a2b8;
+    font-size: 125%;
+  }
+  .info .arrow::before {
+    border-top-color: #17a2b8;
+  }
