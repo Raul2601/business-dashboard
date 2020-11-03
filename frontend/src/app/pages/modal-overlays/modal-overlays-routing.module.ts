@@ -4,6 +4,7 @@ import { ModalOverlaysComponent } from './modal-overlays.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { PopoversComponent } from './popovers/popovers.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { ToastrComponent } from './toastr/toastr.component'
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'tooltip',
         component: TooltipComponent
+      },
+      {
+        path: 'toastr',
+        component: ToastrComponent
       }
     ]
   }

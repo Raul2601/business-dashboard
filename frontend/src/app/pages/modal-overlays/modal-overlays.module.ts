@@ -10,9 +10,11 @@ import { PopoversComponent } from './popovers/popovers.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { ToastsComponent } from './toasts/toasts.component';
+import { ToastrComponent } from './toastr/toastr.component';
 
 @NgModule({
-  declarations: [DialogComponent, ModalOverlaysComponent, PopoversComponent, TooltipComponent],
+  declarations: [DialogComponent, ModalOverlaysComponent, PopoversComponent, TooltipComponent, ToastsComponent, ToastrComponent],
   imports: [
     CommonModule,
     ModalOverlaysRoutingModule,
