@@ -8,6 +8,8 @@ import { CoreModule } from 'src/app/core/core.module';
 import { MaterialModule } from '../../shared/material.module';
 import { PopoversComponent } from './popovers/popovers.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [DialogComponent, ModalOverlaysComponent, PopoversComponent],
   imports: [
@@ -15,6 +17,7 @@ import { PopoversComponent } from './popovers/popovers.component';
     ModalOverlaysRoutingModule,
     CoreModule,
     MaterialModule,
+    NgbModule
   ]
 })
 export class ModalOverlaysModule { }
