@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Basic datepicker
+            </app-card-header>
+            <ngb-datepicker #dp [(ngModel)]="model" (navigate)="navigateEvent($event)"></ngb-datepicker>
+            <br>
+
+            <div class="mt-3 mb-3">
+                <button class="btn btn-sm btn-outline-primary mr-2" (click)="selectToday()">Select Today</button>
+                <button class="btn btn-sm btn-outline-primary mr-2" (click)="setCurrent()">To current month</button>
+                <button class="btn btn-sm btn-outline-primary mr-2" (click)="setDate()">To Feb 2013</button>
+            </div>
+
+            <pre>Month: {{ date.month }}.{{ date.year }}</pre>
+            <pre>Model: {{ model | json }}</pre>
+        </mat-card>
+    </div>
+
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Multiple months
+            </app-card-header>
+            <ngb-datepicker [displayMonths]="displayMonths" [navigation]="navigation"
+                [showWeekNumbers]="showWeekNumbers" [outsideDays]="outsideDays">
+            </ngb-datepicker>
+
+            <hr />
+
+            <div class="d-flex flex-wrap align-content-between p-2">
+                <select class="custom-select" [(ngModel)]="displayMonths">
+                    <option [ngValue]="1">One month</option>
+                    <option [ngValue]="2">Two months</option>
+                    <option [ngValue]="3">Three months</option>
+                </select>
+
+                <select class="custom-select" [(ngModel)]="navigation">
+                    <option value="none">Without navigation</option>
+                    <option value="select">With select boxes</option>
+                    <option value="arrows">Without select boxes</option>
+                </select>
+
+                <select class="custom-select" [(ngModel)]="showWeekNumbers">
+                    <option [ngValue]="true">Week numbers</option>
+                    <option [ngValue]="false">No week numbers</option>
+                </select>
+
+                <select class="custom-select" [(ngModel)]="outsideDays">
+                    <option value="visible">Visible outside days</option>
+                    <option value="hidden">Hidden outside days</option>
+                    <option value="collapsed">Collapsed outside days</option>
+                </select>
+            </div>
+        </mat-card>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-12">
+        <mat-card>
+            <app-card-header>
+                Range selection
+            </app-card-header>
+            <ngb-datepicker #dp (dateSelect)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t"
+                outsideDays="hidden">
+            </ngb-datepicker>
+
+            <ng-template #t let-date let-focused="focused">
+                <span class="custom-day" [class.focused]="focused" [class.range]="isRange(date)"
+                    [class.faded]="isHovered(date) || isInside(date)" (mouseenter)="hoveredDate = date"
+                    (mouseleave)="hoveredDate = null">
+                    {{ date.day }}
+                </span>
+            </ng-template>
+
+            <hr>
+
+            <pre>From: {{ fromDate | json }} </pre>
+            <pre>To: {{ toDate | json }} </pre>
+        </mat-card>
+    </div>
+
+
+</div>
