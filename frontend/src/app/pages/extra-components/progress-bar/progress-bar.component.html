@@ -1,0 +1,112 @@
+<div class="row">
+    <div class="col-md-12">
+        <mat-card>
+            <app-card-header>
+                Basic Progress Bars
+            </app-card-header>
+            <p>
+                <ngb-progressbar type="success" [value]="25">Success</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="info" [value]="50">Info</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="warning" [value]="75">Warning</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="danger" [value]="100">Danger</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="primary" [value]="75">Primary</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="secondary" [value]="50">Secondary</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="dark" [value]="25">Dark</ngb-progressbar>
+            </p>
+        </mat-card>
+    </div>
+
+    <div class="col-md-12">
+        <mat-card>
+            <app-card-header>
+                Progress Bar Value
+            </app-card-header>
+            <p>
+                <ngb-progressbar type="success" textType="white" [value]="25" [showValue]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="dark" textType="white" [value]="50" [showValue]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="light" textType="success" [value]="75" [showValue]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="warning" textType="dark" [value]="100" [showValue]="true"></ngb-progressbar>
+            </p>
+        </mat-card>
+    </div>
+
+    <div class="col-md-12">
+        <mat-card>
+            <app-card-header>
+                Striped progress bars
+            </app-card-header>
+            <p>
+                <ngb-progressbar type="success" [value]="25" [striped]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="info" [value]="50" [striped]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="warning" [value]="75" [striped]="true"></ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="danger" [value]="100" [striped]="true"></ngb-progressbar>
+            </p>
+        </mat-card>
+    </div>
+
+    <div class="col-md-12">
+        <mat-card>
+            <app-card-header>
+                Progress bars with custom labels
+            </app-card-header>
+            <p>
+                <ngb-progressbar type="success" [value]="25">25</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="info" [value]="50">2 of 4...</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>50%</i>
+                </ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar>
+            </p>
+        </mat-card>
+    </div>
+
+    <div class="col-md-12">
+        <mat-card>
+            <app-card-header>
+                Progress bars with height
+            </app-card-header>
+            <p>
+                <ngb-progressbar type="success" [value]="25">default</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="info" [value]="50" height="10px">10px</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="warning" [value]="75" height=".5rem">.5rem</ngb-progressbar>
+            </p>
+            <p>
+                <ngb-progressbar type="danger" [value]="100" [height]="height">{{height}}</ngb-progressbar>
+            </p>
+        </mat-card>
+    </div>
+
+</div>
