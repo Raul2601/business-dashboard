@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ExtraComponentsComponent } from './extra-components.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { SpinnersComponent } from './spinners/spinners.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'progress-bar',
         component: ProgressBarComponent
+      },
+      {
+        path: 'spinner',
+        component: SpinnersComponent
       }
     ]
   }

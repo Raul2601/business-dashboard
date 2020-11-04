@@ -9,9 +9,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreModule } from '../../core/core.module'
 import { MaterialModule } from '../../shared/material.module';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { SpinnersComponent } from './spinners/spinners.component';
 
 @NgModule({
-  declarations: [ExtraComponentsComponent, CalendarComponent, ProgressBarComponent],
+  declarations: [ExtraComponentsComponent, CalendarComponent, ProgressBarComponent, SpinnersComponent],
   imports: [
     CommonModule,
     ExtraComponentsRoutingModule,
