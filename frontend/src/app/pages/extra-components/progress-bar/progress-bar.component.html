@@ -92,6 +92,25 @@
     <div class="col-md-12">
         <mat-card>
             <app-card-header>
+                Progress bar Interactive
+            </app-card-header>
+            <div class="d-flex align-items-center">
+                <button (click)="subtract()" mat-mini-fab>
+                    <i class="fa fa-minus"></i>
+                </button>
+                <div class="w-100 mx-2 mt-3">
+                    <ngb-progressbar type="danger" [value]="value" height="20px">{{value}}</ngb-progressbar>
+                </div>
+                <button (click)="add()" mat-mini-fab>
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </mat-card>
+    </div>
+
+    <div class="col-md-12">
+        <mat-card>
+            <app-card-header>
                 Progress bars with height
             </app-card-header>
             <p>
