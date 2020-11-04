@@ -10,9 +10,10 @@ import { CoreModule } from '../../core/core.module'
 import { MaterialModule } from '../../shared/material.module';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SpinnersComponent } from './spinners/spinners.component';
+import { AlertsComponent } from './alerts/alerts.component';
 
 @NgModule({
-  declarations: [ExtraComponentsComponent, CalendarComponent, ProgressBarComponent, SpinnersComponent],
+  declarations: [ExtraComponentsComponent, CalendarComponent, ProgressBarComponent, SpinnersComponent, AlertsComponent],
   imports: [
     CommonModule,
     ExtraComponentsRoutingModule,

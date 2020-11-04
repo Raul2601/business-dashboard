@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AlertsComponent } from './alerts/alerts.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ExtraComponentsComponent } from './extra-components.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'spinner',
         component: SpinnersComponent
+      },
+      {
+        path: 'alert',
+        component: AlertsComponent
       }
     ]
   }
