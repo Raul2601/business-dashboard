@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<google-map height="500px" width="100%" [zoom]="zoom" [center]="center" [options]="options"></google-map>
+<!-- Use custom zoom buttons -->
+<div class="mt-2 d-flex justify-content-center">
+    <button type="button" class="btn btn-info mr-2" (click)="zoomIn()">Zoom in</button>
+    <button type="button" class="btn btn-info" (click)="zoomOut()">Zoom out</button>
+</div>
