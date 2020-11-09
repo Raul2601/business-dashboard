@@ -36,6 +36,11 @@ const routes: Routes = [
         path: 'maps',
         loadChildren: () => import('./maps/maps.module')
           .then(m => m.MapsModule)
+      },
+      {
+        path: 'charts',
+        loadChildren: () => import('./charts/charts.module')
+          .then(m => m.ChartsModule)
       }
     ]
   }
