@@ -4,9 +4,36 @@
             <app-card-header>
                 Line
             </app-card-header>
-            <div echarts [options]="chartOption" class="demo-chart"></div>
+            <app-line></app-line>
         </mat-card>
     </div>
+
     <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Area Stack
+            </app-card-header>
+            <app-stacked-area></app-stacked-area>
+        </mat-card>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Bar Animation
+            </app-card-header>
+            <app-bar-animation></app-bar-animation>
+        </mat-card>
+    </div>
+
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Simple Line
+            </app-card-header>
+            <app-simple-line></app-simple-line>
+        </mat-card>
     </div>
 </div>

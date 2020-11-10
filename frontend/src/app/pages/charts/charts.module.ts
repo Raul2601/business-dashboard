@@ -11,9 +11,13 @@ import { EchartsComponent } from './echarts/echarts.component';
 
 import { NgxEchartsModule } from 'ngx-echarts';
 import * as echarts from 'echarts';
+import { StackedAreaComponent } from './echarts/stacked-area/stacked-area.component';
+import { BarAnimationComponent } from './echarts/bar-animation/bar-animation.component';
+import { LineComponent } from './echarts/line/line.component';
+import { SimpleLineComponent } from './echarts/simple-line/simple-line.component';
 
 @NgModule({
-  declarations: [ChartsComponent, EchartsComponent],
+  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent],
   imports: [
     CommonModule,
     ChartsRoutingModule,
