@@ -15,9 +15,11 @@ import { StackedAreaComponent } from './echarts/stacked-area/stacked-area.compon
 import { BarAnimationComponent } from './echarts/bar-animation/bar-animation.component';
 import { LineComponent } from './echarts/line/line.component';
 import { SimpleLineComponent } from './echarts/simple-line/simple-line.component';
+import { PieComponent } from './echarts/pie/pie.component';
+import { PieCustomizedComponent } from './echarts/pie-customized/pie-customized.component';
 
 @NgModule({
-  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent],
+  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent, PieComponent, PieCustomizedComponent],
   imports: [
     CommonModule,
     ChartsRoutingModule,
