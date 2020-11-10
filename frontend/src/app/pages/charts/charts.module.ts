@@ -17,9 +17,14 @@ import { LineComponent } from './echarts/line/line.component';
 import { SimpleLineComponent } from './echarts/simple-line/simple-line.component';
 import { PieComponent } from './echarts/pie/pie.component';
 import { PieCustomizedComponent } from './echarts/pie-customized/pie-customized.component';
+import { ChartjsComponent } from './chartjs/chartjs.component';
+import { LineChartComponent } from './chartjs/line-chart/line-chart.component';
+import { ChartsModule as ChartModule } from 'ng2-charts';
+import { BarChartComponent } from './chartjs/bar-chart/bar-chart.component';
+import { DoughnutChartComponent } from './chartjs/doughnut-chart/doughnut-chart.component';
 
 @NgModule({
-  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent, PieComponent, PieCustomizedComponent],
+  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent, PieComponent, PieCustomizedComponent, ChartjsComponent, LineChartComponent, BarChartComponent, DoughnutChartComponent],
   imports: [
     CommonModule,
     ChartsRoutingModule,
@@ -28,7 +33,8 @@ import { PieCustomizedComponent } from './echarts/pie-customized/pie-customized.
     }),
     NgbModule,
     CoreModule,
-    MaterialModule
+    MaterialModule,
+    ChartModule
   ]
 })
 export class ChartsModule { }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ChartjsComponent } from './chartjs/chartjs.component';
 import { ChartsComponent } from './charts.component';
 import { EchartsComponent } from './echarts/echarts.component';
 
@@ -11,6 +12,10 @@ const routes: Routes = [
       {
         path: 'echarts',
         component: EchartsComponent
+      },
+      {
+        path: 'chartjs',
+        component: ChartjsComponent
       }
     ]
   }
