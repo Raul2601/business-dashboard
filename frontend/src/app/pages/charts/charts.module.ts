@@ -23,9 +23,10 @@ import { ChartsModule as ChartModule } from 'ng2-charts';
 import { BarChartComponent } from './chartjs/bar-chart/bar-chart.component';
 import { DoughnutChartComponent } from './chartjs/doughnut-chart/doughnut-chart.component';
 import { RadarChartComponent } from './chartjs/radar-chart/radar-chart.component';
+import { PolarAreaChartComponent } from './chartjs/polar-area-chart/polar-area-chart.component';
 
 @NgModule({
-  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent, PieComponent, PieCustomizedComponent, ChartjsComponent, LineChartComponent, BarChartComponent, DoughnutChartComponent, RadarChartComponent],
+  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent, PieComponent, PieCustomizedComponent, ChartjsComponent, LineChartComponent, BarChartComponent, DoughnutChartComponent, RadarChartComponent, PolarAreaChartComponent],
   imports: [
     CommonModule,
     ChartsRoutingModule,
