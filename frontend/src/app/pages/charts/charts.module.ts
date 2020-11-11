@@ -24,9 +24,12 @@ import { BarChartComponent } from './chartjs/bar-chart/bar-chart.component';
 import { DoughnutChartComponent } from './chartjs/doughnut-chart/doughnut-chart.component';
 import { RadarChartComponent } from './chartjs/radar-chart/radar-chart.component';
 import { PolarAreaChartComponent } from './chartjs/polar-area-chart/polar-area-chart.component';
+import { D3Component } from './d3/d3.component';
+import { D3LineComponent } from './d3/d3-line/d3-line.component';
+import { D3BarChartComponent } from './d3/d3-bar-chart/d3-bar-chart.component';
 
 @NgModule({
-  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent, PieComponent, PieCustomizedComponent, ChartjsComponent, LineChartComponent, BarChartComponent, DoughnutChartComponent, RadarChartComponent, PolarAreaChartComponent],
+  declarations: [ChartsComponent, EchartsComponent, StackedAreaComponent, BarAnimationComponent, LineComponent, SimpleLineComponent, PieComponent, PieCustomizedComponent, ChartjsComponent, LineChartComponent, BarChartComponent, DoughnutChartComponent, RadarChartComponent, PolarAreaChartComponent, D3Component, D3LineComponent, D3BarChartComponent],
   imports: [
     CommonModule,
     ChartsRoutingModule,
