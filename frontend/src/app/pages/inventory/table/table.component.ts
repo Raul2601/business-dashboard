@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
@@ -6,57 +6,57 @@ import { MatSort } from '@angular/material/sort';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
+  styleUrls: ['./table.component.css'],
 })
-export class TableComponent {
+export class TableComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', "getdetails"];
+  displayedColumns: string[] = ['position', 'name', 'price', 'stock', 'active', 'getdetails'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  ngAfterViewInit() {
+  isExpansionDetailRow = (index, row) => row.hasOwnProperty('detailRow');
+
+  ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
 
-  getRecord(name) {
-    alert(name);
-  }
-
-  public doFilter = (value: string) => {
-    this.dataSource.filter = value.trim().toLocaleLowerCase();
+  doFilter(filterValue: string) {
+    filterValue = filterValue.trim(); // Remove whitespace
+    filterValue = filterValue.toLowerCase(); // Datasource defaults to lowercase matches
+    this.dataSource.filter = filterValue;
   }
 }
-
 
 
 export interface PeriodicElement {
   name: string;
   position: number;
-  weight: number;
-  symbol: string;
+  price: number;
+  stock: number;
+  active: boolean;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-  { position: 11, name: 'Sodium', weight: 22.9897, symbol: 'Na' },
-  { position: 12, name: 'Magnesium', weight: 24.305, symbol: 'Mg' },
-  { position: 13, name: 'Aluminum', weight: 26.9815, symbol: 'Al' },
-  { position: 14, name: 'Silicon', weight: 28.0855, symbol: 'Si' },
-  { position: 15, name: 'Phosphorus', weight: 30.9738, symbol: 'P' },
-  { position: 16, name: 'Sulfur', weight: 32.065, symbol: 'S' },
-  { position: 17, name: 'Chlorine', weight: 35.453, symbol: 'Cl' },
-  { position: 18, name: 'Argon', weight: 39.948, symbol: 'Ar' },
-  { position: 19, name: 'Potassium', weight: 39.0983, symbol: 'K' },
-  { position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca' },
+  { position: 1, name: 'Hydrogen', price: 1.0079, stock: 12, active: false },
+  { position: 2, name: 'Helium', price: 4.0026, stock: 31, active: true },
+  { position: 3, name: 'Lithium', price: 6.941, stock: 36, active: false },
+  { position: 4, name: 'Beryllium', price: 9.0122, stock: 35, active: true },
+  { position: 5, name: 'Boron', price: 10.811, stock: 17, active: true },
+  { position: 6, name: 'Carbon', price: 12.0107, stock: 25, active: false },
+  { position: 7, name: 'Nitrogen', price: 14.0067, stock: 10, active: true },
+  { position: 8, name: 'Oxygen', price: 15.9994, stock: 15, active: true },
+  { position: 9, name: 'Fluorine', price: 18.9984, stock: 11, active: false },
+  { position: 10, name: 'Neon', price: 20.1797, stock: 8, active: true },
+  { position: 11, name: 'Sodium', price: 22.9897, stock: 18, active: true },
+  { position: 12, name: 'Magnesium', price: 24.305, stock: 12, active: false },
+  { position: 13, name: 'Aluminum', price: 26.9815, stock: 22, active: false },
+  { position: 14, name: 'Silicon', price: 28.0855, stock: 28, active: true },
+  { position: 15, name: 'Phosphorus', price: 30.9738, stock: 50, active: true },
+  { position: 16, name: 'Sulfur', price: 32.065, stock: 60, active: true },
+  { position: 17, name: 'Chlorine', price: 35.453, stock: 4, active: true },
+  { position: 18, name: 'Argon', price: 39.948, stock: 10, active: true },
+  { position: 19, name: 'Potassium', price: 39.0983, stock: 10, active: true },
+  { position: 20, name: 'Calcium', price: 40.078, stock: 10, active: false },
 ];
