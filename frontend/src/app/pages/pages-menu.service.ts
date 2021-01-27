@@ -20,6 +20,10 @@ export class PagesMenuService {
             title: 'Table',
             link: '/pages/inventory/table',
           },
+          {
+            title: 'NgTable',
+            link: '/pages/inventory/ng-table',
+          },
         ],
       },
       {
