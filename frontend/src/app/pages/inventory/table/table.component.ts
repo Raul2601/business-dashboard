@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { MatTableDataSource } from '@angular/material/table';
-
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-table',
@@ -16,10 +16,32 @@ import { MatTableDataSource } from '@angular/material/table';
   ],
 })
 
-export class TableComponent {
+export class TableComponent implements AfterViewInit {
 
   isTableExpanded = false;
 
+  dataStudentsList = new MatTableDataSource();
+  displayedStudentsColumnsList: string[] = ['id', 'name', 'age', 'address', 'actions'];
+
+  @ViewChild(MatSort) sort: MatSort;
+
+  ngAfterViewInit() {
+    this.dataStudentsList.sort = this.sort;
+  }
+  ngOnInit() {
+    this.dataStudentsList.data = this.STUDENTS_DATA;
+  }
+
+  // Toggel Rows
+  toggleTableRows() {
+    this.isTableExpanded = !this.isTableExpanded;
+
+    this.dataStudentsList.data.forEach((row: any) => {
+      row.isExpanded = this.isTableExpanded;
+    })
+  }
+
+  const
   STUDENTS_DATA = [
     {
       "id": 1,
@@ -95,22 +117,5 @@ export class TableComponent {
     }
   ];
 
-
-  dataStudentsList = new MatTableDataSource();
-  displayedStudentsColumnsList: string[] = ['id', 'name', 'age', 'address', 'actions'];
-
-
-  ngOnInit() {
-    this.dataStudentsList.data = this.STUDENTS_DATA;
-  }
-
-  // Toggel Rows
-  toggleTableRows() {
-    this.isTableExpanded = !this.isTableExpanded;
-
-    this.dataStudentsList.data.forEach((row: any) => {
-      row.isExpanded = this.isTableExpanded;
-    })
-  }
 }
 
