@@ -1,5 +1,4 @@
 .menu-sidebar {
-    width: 16rem;
     color: #222b45;
     font-family: Open Sans,sans-serif;
     font-size: .9375rem;
@@ -10,10 +9,11 @@
   .main-container {
     top: 4.75rem;
     position: fixed;
-    width: 16rem;
+    width: 15%;
+    min-width: 180px;
     background-color: #fff;
     box-shadow: 0 0.5rem 1rem 0 rgba(44,51,73,.1);
-    height: calc(100vh - 4.75rem);
+    height: 100%;
     overflow: auto;
     cursor: pointer;
     border-radius: .15625rem;

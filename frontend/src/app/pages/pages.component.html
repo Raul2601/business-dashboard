@@ -1,9 +1,14 @@
 <app-header></app-header>
-<div class="layout-container">
-    <app-left-menu></app-left-menu>
-    <div class="content scrollbar" id="style-4">
-        <div class="container columns">
-            <router-outlet></router-outlet>
+
+<div class="main-content">
+    <div class="left-menu">
+        <app-left-menu></app-left-menu>
+    </div>
+    <div class="right-content">
+        <div class="content scrollbar" id="style-4">
+            <div class="columns">
+                <router-outlet></router-outlet>
+            </div>
         </div>
         <app-footer></app-footer>
     </div>

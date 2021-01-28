@@ -1,14 +1,25 @@
-.layout-container{
+
+.main-content{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    height: 92%;
+}
+
+.left-menu{
+    width: 15%;
+}
+
+.right-content{
+    width: 85%;
 }
 
 .content{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(237, 241, 247);
-    height: 100%;
+    background-color: rgb(233, 233, 233);
+    height: 95%;
 }
 
 .columns{
@@ -38,11 +49,5 @@
 .scrollbar
 {
 	float: left;
-    height: 53.9rem;
 	overflow-y: scroll;
-}
-
-.force-overflow
-{
-	/* min-height: 450px; */
 }
