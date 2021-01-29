@@ -14,7 +14,7 @@ export class PagesMenuService {
     const menu: MenuItem[] = [
       {
         title: 'Inventory',
-        icon: 'fa fa-shoping-cart',
+        icon: 'fas fa-home',
         children: [
           {
             title: 'Table',
