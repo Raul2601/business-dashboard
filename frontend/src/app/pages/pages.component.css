@@ -8,14 +8,17 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(237, 241, 247);
-    height: 100%;
 }
 
-.columns{
-    margin: 0px;
-    padding: 2.25rem 2.25rem .75rem;
-    max-width: 100%;
+.container{
+    padding: 0 2.25rem;
+    width: 100%;
 }
+
+.layout-content{
+    width: 100%;
+}
+
 
 #style-4::-webkit-scrollbar-track
 {
@@ -38,7 +41,8 @@
 .scrollbar
 {
 	float: left;
-    height: 53.9rem;
+    /* height: 53.9rem; */
+    height: 50.9rem;
 	overflow-y: scroll;
 }
 
