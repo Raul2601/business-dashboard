@@ -50,3 +50,7 @@ table {
   .student-element-description-attribution {
     opacity: 0.5;
   }
+
+  .subjectsButton{
+    background-color: rgb(197, 191, 184);
+  }

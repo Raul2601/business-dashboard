@@ -1,6 +1,17 @@
-.layout-container{
+
+.main-content{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    height: 92%;
+}
+
+.left-menu{
+    width: 15%;
+}
+
+.right-content{
+    width: 85%;
 }
 
 .content{
@@ -44,9 +55,4 @@
     /* height: 53.9rem; */
     height: 50.9rem;
 	overflow-y: scroll;
-}
-
-.force-overflow
-{
-	/* min-height: 450px; */
 }
