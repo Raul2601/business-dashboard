@@ -21,3 +21,7 @@
   .secondStepper{
     margin-bottom: 2.25rem;
   }
+
+  .mat-stepper-horizontal{
+    margin-top: 0;
+  }
