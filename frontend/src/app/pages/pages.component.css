@@ -21,7 +21,7 @@
     background-color: rgb(237, 241, 247);
 }
 
-.container{
+.main-container{
     padding: 0 2.25rem;
     width: 100%;
 }
@@ -49,6 +49,6 @@
 {
 	float: left;
     /* height: 53.9rem; */
-    height: 50.9rem;
+    height: 95%;
 	overflow-y: scroll;
 }
