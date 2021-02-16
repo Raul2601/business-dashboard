@@ -2,25 +2,47 @@
     <div class="col-md-6">
         <mat-card>
             <app-card-header>
-                Popover Position
+                Toastr
             </app-card-header>
-            <button class="btn btn-primary" (click)="showStandard()" ngbTooltip="Will disappear in 5s">Standard
-                toast</button>&nbsp;
-            <button class="btn btn-success" (click)="showSuccess()" ngbTooltip="Will disappear in 10s">Success
-                toast</button>&nbsp;
-            <button class="btn btn-danger" (click)="showError()" ngbTooltip="Will disappear in 10s">Error
-                toast</button>&nbsp;
+            <div class="my-1">
+                <button class="btn btn-primary my-2" (click)="showStandard()" ngbTooltip="Will disappear in 5s">Standard
+                    toast</button>&nbsp;
+                <button class="btn btn-success my-2" (click)="showSuccess()" ngbTooltip="Will disappear in 10s">Success
+                    toast</button>&nbsp;
+                <button class="btn btn-danger my-2" (click)="showError()" ngbTooltip="Will disappear in 10s">Error
+                    toast</button>&nbsp;
 
-            <ng-template #customTpl>
-                <i>This is</i> a <u>custome</u> template <b>toast message</b>
-            </ng-template>
+                <ng-template #customTpl>
+                    <i>This is</i> a <u>custome</u> template <b>toast message</b>
+                </ng-template>
 
-            <button class="btn btn-info" (click)="showCustomToast(customTpl)" ngbTooltip="Will disappear in 15s">Custom
-                toast</button>&nbsp;
+                <button class="btn btn-info my-2" (click)="showCustomToast(customTpl)"
+                    ngbTooltip="Will disappear in 15s">Custom
+                    toast</button>&nbsp;
 
-            <router-outlet></router-outlet>
+                <router-outlet></router-outlet>
 
-            <app-toasts></app-toasts>
+                <app-toasts></app-toasts>
+            </div>
+        </mat-card>
+    </div>
+
+    <div class="col-md-6">
+        <mat-card>
+            <app-card-header>
+                Basic Snack-bar
+            </app-card-header>
+            <mat-form-field class="mr-4">
+                <mat-label>Message</mat-label>
+                <input matInput value="Disco party!" #message>
+            </mat-form-field>
+
+            <mat-form-field class="mr-4">
+                <mat-label>Action</mat-label>
+                <input matInput value="Dance" #action>
+            </mat-form-field>
+
+            <button mat-stroked-button (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
         </mat-card>
     </div>
 </div>

@@ -13,3 +13,8 @@ table{
      display: flex;
      justify-content: between;
  }
+
+ a,
+a label {
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastService } from '../toasts/toast.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-toastr',
@@ -8,8 +9,13 @@ import { ToastService } from '../toasts/toast.service';
 })
 export class ToastrComponent {
 
-  constructor(public toastService: ToastService) { }
+  constructor(public toastService: ToastService, private _snackBar: MatSnackBar) { }
 
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action, {
+      duration: 2000,
+    });
+  }
   showStandard() {
     this.toastService.show('I am a standard toast', {
       delay: 2000,
