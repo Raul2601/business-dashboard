@@ -15,9 +15,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { StatementComponent } from './statement/statement.component';
+import { BalanceComponent } from './balance/balance.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { BudgetComponent } from './budget/budget.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
-  declarations: [FinanceComponent, DashboardComponent],
+  declarations: [FinanceComponent, DashboardComponent, StatementComponent, BalanceComponent, TransactionsComponent, BudgetComponent],
   imports: [
     CommonModule,
     FinanceRoutingModule,
@@ -29,7 +34,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatProgressBarModule
   ]
 })
 export class FinanceModule { }

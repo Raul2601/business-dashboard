@@ -14,3 +14,62 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+.text-md{
+    font-size: .8125rem
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.tracking-wider {
+    letter-spacing: .05em;
+}
+
+.text-green {
+    color: #0e9f6e;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-sm {
+    font-size: .75rem;
+}
+
+.treo-theme-light .text-disabled, .treo-theme-light .text-hint {
+    color: #97a6ba;
+}
+
+.tracking-wider {
+    letter-spacing: .05em!important;
+}
+.uppercase {
+    text-transform: uppercase!important;
+}
+
+.leading-none {
+    line-height: 1!important;
+}
+
+.text-xs {
+    font-size: .625rem!important;
+}
+
+.font-semibold {
+    font-weight: 600!important;
+}
+
+.treo-theme-light *, .treo-theme-light :after, .treo-theme-light :before {
+    border-color: #e2e8f0;
+}
+
+.text-3xl {
+    font-size: 1.5rem!important;
+}
+
+.font-medium {
+    font-weight: 500!important;
+}

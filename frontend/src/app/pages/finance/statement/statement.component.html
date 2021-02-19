@@ -1,0 +1,132 @@
+<mat-card>
+    <div class="row m-2">
+        <div class="col-md-12 p-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex items-center">
+                        <div class="d-flex flex-column">
+                            <div class="font-bold text-md text-secondary uppercase tracking-wider">Previous
+                                Statement</div>
+                            <div class="text-green font-medium text-sm"> Paid on February 3, 2021 </div>
+                        </div>
+                        <div class="ml-auto">
+                            <button mat-icon-button [matMenuTriggerFor]="menu">
+                                <mat-icon>more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c50-10"
+                                    role="menuitem" tabindex="0" aria-disabled="false"><span class="flex items-center">
+                                        <mat-icon role="img"
+                                            class="mat-icon notranslate icon-size-20 mr-3 mat-icon-no-color"
+                                            aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="payment">
+                                            <svg viewBox="0 0 24 24" x="336" y="1632" fit="" height="100%" width="100%"
+                                                preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                <path opacity=".3" d="M4 6h16v2H4zm0 6h16v6H4z"></path>
+                                                <path
+                                                    d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z">
+                                                </path>
+                                            </svg>
+                                        </mat-icon><span>View statement</span>
+                                    </span>
+                                    <div matripple="" class="mat-ripple mat-menu-ripple"></div>
+                                </button>
+                                <button mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c50-10"
+                                    role="menuitem" tabindex="0" aria-disabled="false"><span class="flex items-center">
+                                        <mat-icon role="img"
+                                            class="mat-icon notranslate icon-size-20 mr-3 mat-icon-no-color"
+                                            aria-hidden="true" data-mat-icon-type="svg"
+                                            data-mat-icon-name="attach_money"><svg viewBox="0 0 24 24" x="480" y="192"
+                                                fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false">
+                                                <path
+                                                    d="M11.5 17.1c-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4s-3-1.2-3-2.15c0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79z">
+                                                </path>
+                                            </svg></mat-icon><span>Spending breakdown</span>
+                                    </span>
+                                    <div matripple="" class="mat-ripple mat-menu-ripple"></div>
+                                </button>
+                                <button mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c50-10"
+                                    role="menuitem" tabindex="0" aria-disabled="false"><span class="flex items-center">
+                                        <mat-icon role="img"
+                                            class="mat-icon notranslate icon-size-20 mr-3 mat-icon-no-color"
+                                            aria-hidden="true" data-mat-icon-type="svg"
+                                            data-mat-icon-name="account_balance"><svg viewBox="0 0 24 24" x="672" y="0"
+                                                fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet"
+                                                focusable="false">
+                                                <path opacity=".3" d="M6.29 6l5.21-2.74L16.71 6z"></path>
+                                                <path
+                                                    d="M6.5 10h-2v7h2v-7zm6 0h-2v7h2v-7zm8.5 9H2v2h19v-2zm-2.5-9h-2v7h2v-7zm-7-9L2 6v2h19V6l-9.5-5zM6.29 6l5.21-2.74L16.71 6H6.29z">
+                                                </path>
+                                            </svg></mat-icon><span>Tax breakdown</span>
+                                    </span>
+                                    <div matripple="" class="mat-ripple mat-menu-ripple"></div>
+                                </button>
+
+                                <mat-divider role="separator"
+                                    class="mat-divider my-2 mat-divider-horizontal ng-tns-c50-10"
+                                    aria-orientation="horizontal"></mat-divider>
+                                <button mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c50-10"
+                                    role="menuitem" tabindex="0" aria-disabled="false"><span class="flex items-center">
+                                        <mat-icon role="img"
+                                            class="mat-icon notranslate icon-size-20 mr-3 mat-icon-no-color"
+                                            aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="print">
+                                            <svg viewBox="0 0 24 24" x="1104" y="1776" fit="" height="100%" width="100%"
+                                                preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                <path opacity=".3" d="M8 5h8v3H8z"></path>
+                                                <path d="M19 11.5a1 1 0 11-2 0 1 1 0 012 0z"></path>
+                                                <path
+                                                    d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 14H8v-4h8v4zm4-4h-2v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4z">
+                                                </path>
+                                                <path opacity=".3"
+                                                    d="M6 13h12v2h2v-4c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4h2v-2zm12-2.5c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z">
+                                                </path>
+                                            </svg>
+                                        </mat-icon><span>Print statement</span>
+                                    </span>
+                                    <div matripple="" class="mat-ripple mat-menu-ripple"></div>
+                                </button>
+                                <button mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c50-10"
+                                    role="menuitem" tabindex="0" aria-disabled="false"><span class="flex items-center">
+                                        <mat-icon role="img"
+                                            class="mat-icon notranslate icon-size-20 mr-3 mat-icon-no-color"
+                                            aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="email">
+                                            <svg viewBox="0 0 24 24" x="288" y="720" fit="" height="100%" width="100%"
+                                                preserveAspectRatio="xMidYMid meet" focusable="false">
+                                                <path opacity=".3" d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z">
+                                                </path>
+                                                <path
+                                                    d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z">
+                                                </path>
+                                            </svg>
+                                        </mat-icon><span>Email statement</span>
+                                    </span>
+                                    <div matripple="" class="mat-ripple mat-menu-ripple"></div>
+                                </button>
+                            </mat-menu>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 d-flex flex-row flex-wrap">
+                    <div class="d-flex flex-column p-0 my-3 col-md-6">
+                        <div class="font-semibold text-xs text-hint uppercase tracking-wider leading-none">Card
+                            Limit</div>
+                        <div class="mt-2 font-medium text-3xl leading-none">$34,500.00</div>
+                    </div>
+                    <div class="d-flex flex-column p-0 my-3 col-md-6">
+                        <div class="font-semibold text-xs text-hint uppercase tracking-wider leading-none">Spent
+                        </div>
+                        <div class="mt-2 font-medium text-3xl leading-none">$27,221.21</div>
+                    </div>
+                    <div class="d-flex flex-column p-0 my-3 col-md-6">
+                        <div class="font-semibold text-xs text-hint uppercase tracking-wider leading-none">
+                            Minimum</div>
+                        <div class="mt-2 font-medium text-3xl leading-none">$7,331.94</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-card>
