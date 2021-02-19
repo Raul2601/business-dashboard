@@ -13,6 +13,17 @@ export class PagesMenuService {
   getMenu(): Observable<MenuItem[]> {
     const menu: MenuItem[] = [
       {
+        title: 'Finance',
+        icon: 'fas fa-home',
+        children: [
+          {
+            title: 'Dashboard',
+            link: '/pages/finance/dashboard',
+          },
+
+        ],
+      },
+      {
         title: 'Inventory',
         icon: 'fas fa-home',
         children: [
